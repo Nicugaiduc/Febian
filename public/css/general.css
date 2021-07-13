@@ -1,0 +1,119 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+body {
+    display: flex;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.mealCategory, .mealInformation {
+    width: 50%;
+    height: 100%;
+    text-align: center;
+}
+
+.categories {
+    width: 100%;
+}
+
+.categoryItem {
+    /* text-align: center; */
+    margin-bottom: 20px;
+}
+
+.categoryItem a{
+    text-decoration: none;
+    font-size: 30px;
+    color: rgba(0, 0, 0, 0.589);
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.categoryItem a:hover {
+    background: rgb(88, 151, 223);
+}
+
+.categoryItem img {
+    width: 50%;
+}
+
+/* MEAL PAGE */
+.mealInformation h2, .mealInformation h4, .mealInformation p {
+    margin-bottom: 20px;
+}
+
+/* TO DO LIST */
+.toDoMeal {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+
+.toDos {
+    margin-bottom: 20px;
+}
+
+.toDoItem {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.toDoItem span {
+    font-size: 30px;
+    color: rgba(0, 0, 0, 0.589);
+    margin-right: 10px;
+}
+
+.toDoItem button {
+    padding: 10px;
+    background: rgb(88, 151, 223);
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+}
+
+.toDoItem button:hover {
+    background: rgb(72, 123, 182);
+}
+
+#addToDoForm {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+#toDoInput {
+    width: 70%;
+    font-size: 20px;
+
+    padding: 25px;
+    border:none;
+    border-radius: 20px;
+    outline: unset;
+
+    color: #fff;
+    background: rgb(88, 151, 223);
+}
+
+#addToDo {
+    width: 25%;
+    font-size: 20px;
+    background: rgb(88, 151, 223);
+    cursor: pointer;
+    border: none;
+    border-radius: 20px;
+}
+
+#addToDo:hover {
+    background: rgb(72, 123, 182);
+}
