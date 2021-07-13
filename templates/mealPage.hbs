@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link rel="stylesheet" href="../css/general.css">
+    </head>
+    <body>
+        <div class="mealInformation">
+            <h2 class="title">{{meals.strMeal}}</h2>
+            <h4 class="category">{{meals.strCategory}}</h4>
+            <h2 class="instructions-title">Instructions:</h2>
+            <p class="instructions">
+                {{meals.strInstructions}}
+            </p>
+            <a href="{{meals.strYoutube}}" class="watch-video" target="_blank">Watch video</a>`
+        </div>
+        <div class="toDoMeal">
+            <ul class="toDos">
+            </ul>
+            <form action="/addToDos" method="post" id="addToDoForm">
+            <input type="text" name="toDoInput" id="toDoInput" placeholder="Enter a meal you are planning to cook" required>
+            <button id="addToDo">
+                Add the meal
+            </button>
+        </form>
+        </div>
+
+        <script src="../js/general.js"></script>
+    </body>
+</html>
